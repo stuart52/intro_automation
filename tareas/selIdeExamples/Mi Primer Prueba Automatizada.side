@@ -21,6 +21,16 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "57a91664-b4da-49e5-9d29-eed2cbb977f8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//section/img",
+      "targets": [
+        ["css=img:nth-child(3)", "css:finder"],
+        ["xpath=//section/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
       "id": "275acddb-5ad7-408c-9802-cb583636c1a1",
       "comment": "",
       "command": "click",
@@ -95,6 +105,20 @@
         ["css=input:nth-child(5)", "css:finder"],
         ["xpath=//input[@value='Log In']", "xpath:attributes"],
         ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac14d364-64b6-4182-b516-07699b726897",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log out",
+      "targets": [
+        ["linkText=log out", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log out')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/logout')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log out')]", "xpath:innerText"]
       ],
       "value": ""
     }]
